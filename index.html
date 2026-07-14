@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FOS Engineering Ltd - Engineering Stability Before Construction Begins. Specialized geotechnical, ground engineering, and construction support company in Rwanda.">
+    <title>FOS Engineering Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-fos">FOS</span> ENGINEERING
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#challenge">The Challenge</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#construction">Construction Support</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+        </ul>
+        <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg" style="background-image: url('assets/images/hero.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <h1>Building Stability from the Ground Up.</h1>
+            <p class="tagline">Engineering Stability Before Construction Begins — Delivering Safety Through Construction.</p>
+            <div class="hero-cta">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="#about" class="btn btn-secondary">Our Vision</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="scroll-sequence" class="scroll-sequence">
+        <div class="loading-overlay">
+            <div class="spinner"></div>
+            <p>Loading Experience (<span id="loading-progress">0</span>%)</p>
+        </div>
+        <div class="canvas-container">
+            <canvas id="sequence-canvas"></canvas>
+            <div class="scroll-prompt">
+                <p>Scroll to explore</p>
+                <i data-lucide="chevron-down" class="bounce"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text slide-in-left">
+                    <h2>About Us</h2>
+                    <p><strong>FOS (Factor of Safety) Engineering Ltd</strong> is a specialized geotechnical, ground engineering, and construction support company dedicated to delivering innovative, practical, and cost-effective solutions for challenging soil, slope, excavation, and foundation conditions.</p>
+                    <p>As Rwanda continues to experience rapid urbanization, increased land utilization, and infrastructure development, projects are increasingly being developed on steep terrain, unstable slopes, and sites requiring deep excavations.</p>
+                    <p>We combine engineering expertise, practical construction experience, and advanced analytical tools to provide solutions from project conception through design, construction, and completion.</p>
+                </div>
+                <div class="mission-vision slide-in-right">
+                    <div class="card glass-card">
+                        <i data-lucide="eye" class="icon-lg"></i>
+                        <h3>Our Vision</h3>
+                        <p>To become the leading geotechnical and ground engineering solutions provider in Rwanda and the East African region by delivering safe, innovative, and sustainable engineering solutions.</p>
+                    </div>
+                    <div class="card glass-card mt-2">
+                        <i data-lucide="target" class="icon-lg"></i>
+                        <h3>Our Mission</h3>
+                        <p>To provide professional geotechnical engineering services through comprehensive investigations, advanced analysis, innovative design, and practical construction solutions that ensure the safety, stability, and sustainability of infrastructure developments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="challenge" class="challenge section bg-dark">
+        <div class="container">
+            <h2 class="text-center slide-up">The Challenge We Address</h2>
+            <p class="text-center max-w slide-up">One of the most overlooked aspects of construction projects is the early consideration of geotechnical conditions during project planning and design.</p>
+            
+            <div class="challenge-grid mt-4">
+                <div class="challenge-card fade-in">
+                    <i data-lucide="alert-triangle" class="icon-warning"></i>
+                    <h4>Overlooked Assessments</h4>
+                    <p>Architectural and structural designs are often completed without sufficient assessment of slope stability, deep excavation requirements, groundwater conditions, or soil bearing capacity.</p>
+                </div>
+                <div class="challenge-card fade-in delay-1">
+                    <i data-lucide="trending-down" class="icon-warning"></i>
+                    <h4>Costly Consequences</h4>
+                    <p>As a result, projects encounter excavation failures, slope instability, building settlement, construction delays, and emergency stabilization works.</p>
+                </div>
+                <div class="challenge-card fade-in delay-2">
+                    <i data-lucide="shield-check" class="icon-success"></i>
+                    <h4>Our Solution</h4>
+                    <p>We help clients identify and eliminate these risks before construction begins through early geotechnical involvement integrated into the feasibility and concept design stage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services section">
+        <div class="container">
+            <h2 class="text-center slide-up">Core Services</h2>
+            <div class="services-grid mt-4">
+                <div class="service-card hover-lift slide-up">
+                    <div class="service-img" style="background-image: url('assets/images/investigation.jpg');"></div>
+                    <div class="service-content">
+                        <h3>Geotechnical Investigation</h3>
+                        <ul>
+                            <li>Site reconnaissance and geological mapping</li>
+                            <li>Borehole investigations</li>
+                            <li>Trial pits and test excavations</li>
+                            <li>Soil sampling and in-situ testing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-card hover-lift slide-up delay-1">
+                    <div class="service-img" style="background-image: url('assets/images/retaining.jpg');"></div>
+                    <div class="service-content">
+                        <h3>Earth Retaining Systems</h3>
+                        <ul>
+                            <li>Soil nailing systems</li>
+                            <li>Geogrid Reinforced Soil (GRS)</li>
+                            <li>Sheet and contiguous piling systems</li>
+                            <li>Reinforced concrete retaining walls</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card hover-lift slide-up delay-2">
+                    <div class="service-img bg-pattern">
+                        <i data-lucide="mountain-snow" class="icon-huge text-white"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Slope Stability Engineering</h3>
+                        <ul>
+                            <li>Slope stability analysis and Design</li>
+                            <li>Landslide investigations</li>
+                            <li>Slope stabilization design and Execution</li>
+                            <li>Risk assessment and mitigation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card hover-lift slide-up">
+                    <div class="service-img bg-pattern-2">
+                        <i data-lucide="flask-conical" class="icon-huge text-white"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Laboratory Testing</h3>
+                        <ul>
+                            <li>Soil classification and Atterberg limits</li>
+                            <li>Compaction and CBR testing</li>
+                            <li>Shear strength & Consolidation testing</li>
+                            <li>Permeability and Rock testing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card hover-lift slide-up delay-1">
+                    <div class="service-img bg-pattern-3">
+                        <i data-lucide="waves" class="icon-huge text-white"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Drainage & Groundwater</h3>
+                        <ul>
+                            <li>Underground drainage systems</li>
+                            <li>Surface water management</li>
+                            <li>Groundwater control</li>
+                            <li>Erosion protection measures</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card hover-lift slide-up delay-2">
+                    <div class="service-img bg-pattern-4">
+                        <i data-lucide="layers" class="icon-huge text-white"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Foundation & Ground Improvement</h3>
+                        <ul>
+                            <li>Shallow and deep foundation design</li>
+                            <li>Pile foundation systems</li>
+                            <li>Soil stabilization and reinforcement</li>
+                            <li>Geosynthetic applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="construction" class="construction section bg-light-gray">
+        <div class="container">
+            <div class="construction-flex">
+                <div class="construction-content slide-in-left">
+                    <h2>Supporting Contractors Through Safe Site Preparation and Construction</h2>
+                    <p>At FOS Engineering Ltd, we understand that the highest risks often occur during excavation and substructure construction.</p>
+                    <p>We provide practical engineering support to contractors during site preparation, excavation, earthworks, foundation works, and retaining structure construction to ensure safe and efficient execution.</p>
+                    <p class="highlight-text">Our objective is to help contractors safely progress from site preparation to completed substructures while minimizing risks, delays, and additional costs.</p>
+                </div>
+                <div class="construction-list slide-in-right">
+                    <div class="glass-panel">
+                        <h3>Construction Support Services</h3>
+                        <ul class="check-list mt-2">
+                            <li><i data-lucide="check-circle-2"></i> Site preparation planning</li>
+                            <li><i data-lucide="check-circle-2"></i> Bulk excavation and cut-fill optimization</li>
+                            <li><i data-lucide="check-circle-2"></i> Deep excavation support systems</li>
+                            <li><i data-lucide="check-circle-2"></i> Temporary works design</li>
+                            <li><i data-lucide="check-circle-2"></i> Slope stabilization during construction</li>
+                            <li><i data-lucide="check-circle-2"></i> Groundwater control and dewatering</li>
+                            <li><i data-lucide="check-circle-2"></i> Substructure construction supervision</li>
+                            <li><i data-lucide="check-circle-2"></i> Geotechnical construction monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="why-us section bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center slide-up">Why Choose FOS Engineering Ltd?</h2>
+            <div class="stats-grid mt-4">
+                <div class="stat-item fade-in">
+                    <i data-lucide="cpu" class="icon-xl text-accent"></i>
+                    <h4>Technical Expertise</h4>
+                    <p>Specialized knowledge in geotechnical engineering, slope stabilization, retaining systems, foundations, and excavation support.</p>
+                </div>
+                <div class="stat-item fade-in delay-1">
+                    <i data-lucide="shield" class="icon-xl text-accent"></i>
+                    <h4>Risk Prevention</h4>
+                    <p>We focus on identifying and mitigating risks before they become costly project problems.</p>
+                </div>
+                <div class="stat-item fade-in delay-2">
+                    <i data-lucide="map-pin" class="icon-xl text-accent"></i>
+                    <h4>Local Experience</h4>
+                    <p>Deep understanding of Rwanda's terrain, geology, rainfall patterns, and construction challenges.</p>
+                </div>
+                <div class="stat-item fade-in delay-3">
+                    <i data-lucide="hard-hat" class="icon-xl text-accent"></i>
+                    <h4>Practical Experience</h4>
+                    <p>Unlike many consultants, we understand both engineering design and on-site construction realities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="industries section">
+        <div class="container text-center">
+            <h2 class="slide-up">Industries We Serve</h2>
+            <div class="industry-tags mt-3 slide-up delay-1">
+                <span class="tag">Residential Developments</span>
+                <span class="tag">Commercial Buildings</span>
+                <span class="tag">Industrial Facilities</span>
+                <span class="tag">Roads and Highways</span>
+                <span class="tag">Bridges</span>
+                <span class="tag">Hydropower Projects</span>
+                <span class="tag">Water Infrastructure</span>
+                <span class="tag">Public Institutions</span>
+                <span class="tag">Real Estate Developments</span>
+                <span class="tag">Mining and Quarry Operations</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><span class="logo-fos text-accent">FOS</span> ENGINEERING</h3>
+                    <p>Building Stability from the Ground Up.</p>
+                    <p class="mt-2 text-sm text-gray">We do not simply solve geotechnical problems—we prevent them.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Core Services</a></li>
+                        <li><a href="#construction">Construction Support</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FOS Engineering Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
