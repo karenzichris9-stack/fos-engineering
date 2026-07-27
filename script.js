@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Navbar Scroll Effect
+    // Navbar Scroll Effect — start visible since canvas is first element
     const navbar = document.querySelector('.navbar');
+    navbar.classList.add('scrolled'); // default to visible
     
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -121,7 +122,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     start: "top top",
                     end: "bottom bottom",
                     scrub: 0.5,
-                    onUpdate: () => {
+                    onUpdate: (self) => {
+                        // Hide overlay text once user scrolls into the sequence
+                        const heroText = document.querySelector('.canvas-hero-text');
+                        if (heroText) {
+                            if (self.progress > 0.04) {
+                                heroText.classList.add('hide');
+                            } else {
+                                heroText.classList.remove('hide');
+                            }
+                        }
                         if (prompt && sequenceInfo.frame > 5) {
                             prompt.classList.remove('visible');
                         }
