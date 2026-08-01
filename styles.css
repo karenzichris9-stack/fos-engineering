@@ -129,16 +129,19 @@ ul {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    height: 50px;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: 1px;
 }
 
-.logo-image {
-    height: 100%;
-    width: auto;
-    max-width: 200px;
-    object-fit: contain;
+.navbar:not(.scrolled) .logo {
+    color: var(--white);
+}
+
+.logo-fos {
+    color: var(--accent-color);
 }
 
 .nav-links {
